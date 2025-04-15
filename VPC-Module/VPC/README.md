@@ -16,7 +16,7 @@ This Terraform module creates an AWS VPC with a given CIDR block. It also create
 ```
 
 module "VPC" {
-  source         = "./modules/VPC"  # Source-File-Path
+  source         = "./VPC"  # Source-File-Path
   VPC_cidr_block = "10.0.0.0/16"    
   subnet = {
     "subnet1" = {
